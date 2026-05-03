@@ -6,9 +6,12 @@
     <title>Marketing digital</title>
     <meta name="description" content="Portfolio profesional de marketing digital.">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="logo.png">
-    <script src="https://t.contentsquare.net/uxa/c8f39b7893210.js"></script>
+    <script src="https://t.contentsquare.net/uxa/c8f39b7893210.js" defer></script>
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 </head>
 <body>
     <div class="blob-bg"></div>
@@ -38,12 +41,12 @@
                 </p>
                 <div class="cta-group">
                     <a href="#expertise" class="btn btn-primary">Mi ecosistema digital</a>
-                    <a href="#contact" class="btn btn-secondary">¿Hablamos?</a>
+                    <a href="#contact" class="btn btn-secondary">Hablemos</a>
                 </div>
             </div>
             <div class="hero-visual reveal-right">
                 <div class="glass-card main-glass">
-                    <img src="hero-asset.png" alt="Marketing and AI Strategy" id="hero-img">
+                    <img src="hero-asset.png" alt="Marketing and AI Strategy" id="hero-img" fetchpriority="high" decoding="async">
                 </div>
                 <div class="floating-badge badge-1">🤖 Optimización mediante IA</div>
                 <div class="floating-badge badge-2">📊 Mentalidad analítica</div>
@@ -53,7 +56,7 @@
         <section id="about" class="about reveal">
             <div class="glass-card about-card" style="padding: 3rem;">
                 <h2 class="section-title" style="margin-bottom: 2rem;">Más allá de los <span class="gradient-text">libros</span></h2>
-                <p style="font-size: 1.1rem; color: var(--text-muted); max-width: 800px; margin: 0 auto; text-align: center;">
+                <p style="font-size: 1.1rem; color: var(--text-muted); max-width: 800px; margin: 0 auto; text-align: justify;">
                     Soy una mente curiosa en constante evolución. No me conformo con lo tradicional; exploro continuamente nuevas herramientas de <strong>inteligencia artificial</strong> y soluciones de <strong>automatización</strong> para optimizar procesos. En mi tiempo libre me gusta aprender sobre marketing y dominar nuevas habilidades. Mi objetivo es aportar valor a cada proyecto.
                 </p>
             </div>
@@ -66,8 +69,9 @@
                 <div class="flip-card reveal">
                     <div class="flip-card-inner">
                         <div class="flip-card-front glass-card">
-                            <img src="./analytics.png" alt="Analítica y SEO">
+                            <img src="./analytics.png" alt="Analítica y SEO" loading="lazy" decoding="async">
                             <h3>Analítica y SEO</h3>
+                            <span class="card-hint">Saber más</span>
                         </div>
                         <div class="flip-card-back glass-card">
                             <h3>Analítica y SEO</h3>
@@ -79,8 +83,9 @@
                 <div class="flip-card reveal" style="transition-delay: 0.1s;">
                     <div class="flip-card-inner">
                         <div class="flip-card-front glass-card">
-                            <img src="./design.png" alt="Diseño y vídeo">
+                            <img src="./design.png" alt="Diseño y vídeo" loading="lazy" decoding="async">
                             <h3>Diseño y vídeo</h3>
+                            <span class="card-hint">Saber más</span>
                         </div>
                         <div class="flip-card-back glass-card">
                             <h3>Diseño y vídeo</h3>
@@ -92,8 +97,9 @@
                 <div class="flip-card reveal" style="transition-delay: 0.2s;">
                     <div class="flip-card-inner">
                         <div class="flip-card-front glass-card">
-                            <img src="./content.png" alt="Contenido y web">
+                            <img src="./content.png" alt="Contenido y web" loading="lazy" decoding="async">
                             <h3>Contenido y web</h3>
+                            <span class="card-hint">Saber más</span>
                         </div>
                         <div class="flip-card-back glass-card">
                             <h3>Contenido y web</h3>
@@ -105,8 +111,9 @@
                 <div class="flip-card reveal" style="transition-delay: 0.3s;">
                     <div class="flip-card-inner">
                         <div class="flip-card-front glass-card">
-                            <img src="paid-media.png" alt="Paid y redes">
+                            <img src="paid-media.png" alt="Paid y redes" loading="lazy" decoding="async">
                             <h3>Paid y redes</h3>
+                            <span class="card-hint">Saber más</span>
                         </div>
                         <div class="flip-card-back glass-card">
                             <h3>Paid y redes</h3>
@@ -118,8 +125,9 @@
                 <div class="flip-card reveal" style="transition-delay: 0.4s;">
                     <div class="flip-card-inner">
                         <div class="flip-card-front glass-card">
-                            <img src="productividad.png" alt="Productividad">
+                            <img src="productividad.png" alt="Productividad" loading="lazy" decoding="async">
                             <h3>Productividad</h3>
+                            <span class="card-hint">Saber más</span>
                         </div>
                         <div class="flip-card-back glass-card">
                             <h3>Productividad</h3>
@@ -131,8 +139,9 @@
                 <div class="flip-card reveal" style="transition-delay: 0.5s;">
                     <div class="flip-card-inner">
                         <div class="flip-card-front glass-card">
-                            <img src="ia.png" alt="IA">
+                            <img src="ia.png" alt="IA" loading="lazy" decoding="async">
                             <h3>IA</h3>
+                            <span class="card-hint">Saber más</span>
                         </div>
                         <div class="flip-card-back glass-card">
                             <h3>IA</h3>
@@ -150,8 +159,11 @@
                     <div class="timeline-dot"></div>
                     <div class="timeline-content glass-card">
                         <span class="date">Febrero 2026 - Abril 2026</span>
-                        <h3>Multiplicalia | Prácticas</h3>
-                        <p>Durante mi experiencia en prácticas en el área de marketing, he participado activamente en la gestión integral de la presencia online de diversos clientes y he colaborado en la planificación, diseño y ejecución de estrategias de contenido para redes sociales, creando calendarios editoriales y desarrollando copywriting persuasivo. Además, he diseñado piezas visuales adaptadas a la identidad de cada marca, incluyendo posts, carruseles, vídeos y stories para Instagram, Facebook, TikTok y YouTube. También he trabajado en la creación y edición de contenido audiovisual en formato vertical para Reels, TikTok y YouTube Shorts, utilizando herramientas como CapCut y herramientas de inteligencia artificial. A nivel estratégico, he realizado social media plans, identificando los canales más adecuados según cada modelo de negocio, así como en la programación y automatización de publicaciones mediante Meta Business Suite. En el ámbito SEO, he contribuido en la realización de auditorías On-page, estudios de palabras clave, análisis de indexación y optimización de contenidos. También he participado en la revisión y actualización de blogs, así como en la identificación de enlaces tóxicos para mejorar la autoridad de dominio. He colaborado en el análisis del rendimiento digital mediante herramientas como Google Analytics 4, Google Search Console y Hotjar, apoyando en propuestas de mejora basadas en el comportamiento del usuario. Asimismo, he participado en la configuración de campañas en Google Ads y Meta Ads, y en la gestión de bases de datos en Mailchimp. También he trabajado con CMS como WordPress y PrestaShop, creando y optimizando contenidos y fichas de producto para entornos digitales. Esta experiencia me ha permitido desarrollar una visión global del marketing digital, combinando habilidades creativas, analíticas y estratégicas en un entorno profesional real.</p>
+                        <h3>Multiplicalia | Prácticas en empresa</h3>
+                        <p>Durante mi experiencia en prácticas en el área de marketing, he participado activamente en la gestión integral de la presencia online de diversos clientes. He colaborado en la planificación, diseño y ejecución de estrategias de contenido para redes sociales, creando calendarios editoriales y desarrollando copywriting persuasivo.</p>
+                        <p>Además, he diseñado piezas visuales adaptadas a la identidad de cada marca, incluyendo posts, carruseles, vídeos y stories para Instagram, Facebook, TikTok y YouTube. También he trabajado en la creación y edición de contenido audiovisual en formato vertical para Reels, TikTok y YouTube Shorts, utilizando herramientas como CapCut y herramientas de inteligencia artificial. A nivel estratégico, he realizado social media plans, identificando los canales más adecuados según cada modelo de negocio, así como en la programación y automatización de publicaciones mediante Meta Business Suite.</p>
+                        <p>En el ámbito SEO, he contribuido en la realización de auditorías On-page, estudios de palabras clave, análisis de indexación y optimización de contenidos. También he participado en la revisión y actualización de blogs, así como en la identificación de enlaces tóxicos para mejorar la autoridad de dominio. He colaborado en el análisis del rendimiento digital mediante herramientas como Google Analytics 4, Google Search Console y Hotjar, apoyando en propuestas de mejora basadas en el comportamiento del usuario.</p>
+                        <p>Asimismo, he participado en la configuración de campañas en Google Ads y Meta Ads, y en la gestión de bases de datos en Mailchimp. También he trabajado con CMS como WordPress y PrestaShop, creando y optimizando contenidos y fichas de producto para entornos digitales. Esta experiencia me ha permitido desarrollar una visión global del marketing digital, combinando habilidades creativas, analíticas y estratégicas en un entorno profesional real.</p>
                     </div>
                 </div>
                 <div class="timeline-item reveal">
@@ -173,29 +185,61 @@
             </div>
         </section>
 
-        <section id="contact" class="contact reveal">
-            <div class="contact-card glass-card">
-                <h2 class="section-title">¿Hacemos algo juntos?</h2>
-                <p>Estoy preparada para aprender, adaptarme y, sobre todo, aportar resultados desde el primer día. ¿Hablamos de cómo puedo sumar a tu equipo?</p>
-                <form id="contact-form" class="contact-form" action="https://formspree.io/f/xlgzgwvk" method="POST" target="hidden_iframe" onsubmit="handleInvisibleSubmit();">
-                    <!-- Configuración invisible -->
-                    <input type="hidden" name="_subject" value="Nuevo mensaje desde tu Portfolio!">
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_template" value="table">
-                    
-                    <div class="input-group">
-                        <input type="email" name="email" id="email" placeholder="Tu Email de contacto" required>
+        <section id="contact" class="contact">
+            <div class="contact-grid reveal">
+                <div class="contact-card glass-card">
+                    <h2 class="section-title">¿Hacemos algo juntos?</h2>
+                    <p style="margin-bottom: 2rem; text-align: justify;">Estoy preparada para aprender, adaptarme y, sobre todo, aportar resultados desde el primer día. ¿Hablamos de cómo puedo sumar a tu equipo?</p>
+                    <form id="contact-form" class="contact-form" action="https://formspree.io/f/xlgzgwvk" method="POST" target="hidden_iframe" onsubmit="handleInvisibleSubmit();">
+                        <input type="hidden" name="_subject" value="Nuevo mensaje desde tu Portfolio!">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        
+                        <div class="input-group">
+                            <input type="email" name="email" id="email" placeholder="Tu email" required>
+                        </div>
+                        <div class="input-group">
+                            <textarea name="message" id="message" placeholder="Cuéntame sobre la oportunidad..." rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary submit-btn" id="submit-btn">Enviar Mensaje</button>
+                        <div id="form-success" style="display:none; color: #10b981; margin-top: 1rem; font-weight: 600;">
+                            ¡Mensaje enviado con éxito!
+                        </div>
+                    </form>
+                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+                </div>
+
+                <div class="contact-sidebar">
+                    <div class="linkedin-custom-card">
+                        <div class="linkedin-header"></div>
+                        <div class="linkedin-body">
+                            <div class="profile-pic-container">
+                                <img src="hero-asset.png" alt="Linkedin profile" class="profile-pic">
+                            </div>
+                            <h3>Reyes Delgado López</h3>
+                            <p class="headline">Marketing e Investigación de Mercados | Universidad de Sevilla</p>
+                            <div class="location">
+                                <span>📍 Sevilla, España</span>
+                            </div>
+                            <a href="https://es.linkedin.com/in/reyes-delgado-lopez" target="_blank" class="linkedin-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                                </svg>
+                                Ver perfil completo
+                            </a>
+                        </div>
                     </div>
-                    <div class="input-group">
-                        <textarea name="message" id="message" placeholder="Cuéntame sobre la oportunidad..." rows="4" required></textarea>
+
+                    <div class="direct-contact-mini glass-card">
+                        <p>O si lo prefieres, escríbeme a:</p>
+                        <a href="mailto:delgado.lopez.reyes@gmail.com" class="email-link-mini">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                            </svg>
+                            delgado.lopez.reyes@gmail.com
+                        </a>
                     </div>
-                    <button type="submit" class="btn btn-primary submit-btn" id="submit-btn">Enviar Mensaje</button>
-                    <div id="form-success" style="display:none; color: #10b981; margin-top: 1rem; font-weight: 600;">
-                        ¡Mensaje enviado con éxito!
-                    </div>
-                </form>
-                <!-- Iframe invisible -->
-                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+                </div>
             </div>
         </section>
     </main>
@@ -203,9 +247,6 @@
     <footer>
         <div class="footer-content">
             <div class="logo">MARKETING <span class="highlight">DIGITAL</span></div>
-            <div class="social-links">
-                <a href="#">LinkedIn</a>
-            </div>
         </div>
     </footer>
 
