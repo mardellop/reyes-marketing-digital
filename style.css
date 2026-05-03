@@ -140,7 +140,7 @@ h1, h2, h3, h4, .logo, .nav-links {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding: 8rem 5% 4rem;
+    padding: 7rem 5% 4rem;
     gap: 4rem;
 }
 
@@ -158,7 +158,7 @@ h1, h2, h3, h4, .logo, .nav-links {
 }
 
 .title {
-    font-size: 4rem;
+    font-size: 3.2rem;
     line-height: 1.1;
     margin-bottom: 1.5rem;
     font-weight: 800;
@@ -168,7 +168,7 @@ h1, h2, h3, h4, .logo, .nav-links {
 .description {
     font-size: 1.2rem;
     color: var(--text-muted);
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
     max-width: 500px;
 }
 
@@ -364,8 +364,9 @@ section {
 
 .flip-card-back p {
     color: var(--text-muted);
-    font-size: 1rem;
-    line-height: 1.6;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    text-align: center;
 }
 
 .flip-card-back strong {
@@ -442,6 +443,7 @@ section {
 
 .timeline-content p {
     color: var(--text-muted);
+    text-align: justify;
 }
 
 /* Contact */
