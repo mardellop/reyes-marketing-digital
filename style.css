@@ -170,6 +170,7 @@ h1, h2, h3, h4, .logo, .nav-links {
     color: var(--text-muted);
     margin-bottom: 2.5rem;
     max-width: 500px;
+    text-align: justify;
 }
 
 .cta-group {
