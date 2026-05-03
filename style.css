@@ -770,7 +770,6 @@ footer p {
     margin-bottom: 1rem;
 }
 
-
 .email-link {
     display: inline-flex;
     align-items: center;
@@ -787,4 +786,8 @@ footer p {
 .email-link:hover {
     background: rgba(163, 198, 20, 0.05);
     transform: translateY(-2px);
+}
+
+img[src="hero-asset.png"] {
+    filter: grayscale(100%);
 }
