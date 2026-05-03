@@ -158,7 +158,7 @@ h1, h2, h3, h4, .logo, .nav-links {
 }
 
 .title {
-    font-size: 2.8rem;
+    font-size: 4rem;
     line-height: 1.1;
     margin-bottom: 1.5rem;
     font-weight: 800;
@@ -170,7 +170,6 @@ h1, h2, h3, h4, .logo, .nav-links {
     color: var(--text-muted);
     margin-bottom: 2.5rem;
     max-width: 500px;
-    text-align: justify;
 }
 
 .cta-group {
@@ -284,7 +283,7 @@ section {
 
 .section-title {
     font-size: 2.5rem;
-    text-align: justify;
+    text-align: center;
     margin-bottom: 4rem;
 }
 
@@ -443,7 +442,6 @@ section {
 
 .timeline-content p {
     color: var(--text-muted);
-    text-align: justify;
 }
 
 /* Contact */
