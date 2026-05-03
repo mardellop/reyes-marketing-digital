@@ -15,39 +15,42 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Scroll Reveal Animations
+// Optimized Scroll Reveal Animations using Intersection Observer
 const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
 
-const revealOnScroll = () => {
-    const windowHeight = window.innerHeight;
-    const elementVisible = 100;
-
-    revealElements.forEach(element => {
-        const elementTop = element.getBoundingClientRect().top;
-
-        if (elementTop < windowHeight - elementVisible) {
-            element.classList.add('active');
+const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+            revealObserver.unobserve(entry.target);
         }
     });
-};
+}, {
+    threshold: 0.15,
+    rootMargin: '0px 0px -50px 0px'
+});
 
-// Initial check
-window.addEventListener('load', revealOnScroll);
-// Check on scroll
-window.addEventListener('scroll', revealOnScroll);
+revealElements.forEach(element => {
+    revealObserver.observe(element);
+});
 
-// Navbar styling on scroll
-const navbar = document.querySelector('.navbar');
+// Navbar styling on scroll - Throttled for performance
+let isScrolling = false;
+const navbarElement = document.querySelector('.navbar');
 
 window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-        navbar.style.background = 'rgba(248, 250, 252, 0.95)';
-        navbar.style.boxShadow = '0 4px 30px rgba(0, 0, 0, 0.05)';
-    } else {
-        navbar.style.background = 'rgba(248, 250, 252, 0.8)';
-        navbar.style.boxShadow = 'none';
+    if (!isScrolling) {
+        window.requestAnimationFrame(() => {
+            if (window.scrollY > 50) {
+                navbarElement.classList.add('scrolled');
+            } else {
+                navbarElement.classList.remove('scrolled');
+            }
+            isScrolling = false;
+        });
+        isScrolling = true;
     }
-});
+}, { passive: true });
 
 // Simple mobile menu toggle functionality
 const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
@@ -66,7 +69,7 @@ if (mobileMenuBtn && navLinks) {
              navLinks.style.top = '100%';
              navLinks.style.left = '0';
              navLinks.style.width = '100%';
-             navLinks.style.background = 'rgba(15, 23, 42, 0.95)';
+             navLinks.style.background = 'rgba(255, 255, 255, 0.98)';
              navLinks.style.padding = '2rem';
              navLinks.style.backdropFilter = 'blur(10px)';
              navLinks.style.borderBottom = '1px solid var(--glass-border)';
@@ -95,4 +98,30 @@ if (mobileMenuBtn && navLinks) {
             navLinks.style.display = 'none';
         }
     });
+}
+
+// Función para el envío invisible (Cartero Invisible)
+function handleInvisibleSubmit() {
+    const successMsg = document.getElementById('form-success');
+    const submitBtn = document.getElementById('submit-btn');
+    const form = document.getElementById('contact-form');
+
+    if (successMsg && submitBtn) {
+        submitBtn.innerText = 'Enviando...';
+        submitBtn.disabled = true;
+
+        // Mostramos el mensaje de éxito tras un breve momento
+        setTimeout(() => {
+            successMsg.style.display = 'block';
+            submitBtn.innerText = '¡Mensaje Enviado!';
+            form.reset();
+            
+            // Volver al estado normal después de unos segundos
+            setTimeout(() => {
+                successMsg.style.display = 'none';
+                submitBtn.disabled = false;
+                submitBtn.innerText = 'Enviar Mensaje';
+            }, 5000);
+        }, 1000);
+    }
 }
